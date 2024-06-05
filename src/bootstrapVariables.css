@@ -1,0 +1,567 @@
+/* 
+This css overrides the bootstrap variables with the custom variables defined in the file
+*/
+:root {
+    /* --------------------------------- COLORS --------------------------------- */
+    --bs-blue: #1CAFB9;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #D5105B;
+    --bs-orange: #F1A417;
+    --bs-yellow: #FACE45;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #FFFFFF;
+    --bs-gray: #DCDCDC;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #1cafb9;
+    --bs-secondary: #343a40;
+    --bs-success: #198754;
+    --bs-info: #696A92;
+    --bs-warning: #FACE45;
+    --bs-danger: #D5105B;
+    --bs-light: #E4E6E9;
+    --bs-dark: #343a40;
+    --bs-primary-rgb: 28, 175, 185;
+    --bs-secondary-rgb: 52, 58, 64;
+    --bs-danger-rgb: 213, 16, 91;
+    --bs-dark-rgb: 52, 58, 64;
+    --bs-body-bg-rgb: 244, 244, 244;
+    --bs-primary-bg-subtle: #dff1f4;
+    --bs-primary-subtle: #dff1f4;
+    /*   
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 105, 106, 146;
+    --bs-warning-rgb: 250, 206, 69;
+    --bs-danger-rgb: 213, 16, 91;
+    --bs-light-rgb: 228, 230, 233;
+    --bs-dark-rgb: 5, 7, 73; */
+    --bs-font-sans-serif: "Share Tech", sans-serif;
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+    /* --------------------------------- GENERAL -------------------------------- */
+    --bs-body-bg: #F4F4F4;
+    /* ----------------------------------- NAV ---------------------------------- */
+    --bs-nav-link-font-weight: bold !important;
+    --bs-nav-link-color: var(--bs-dark) !important;
+    --bs-link-hover-color: var(--bs-primary) !important;
+    --bs-root-font-size: 1rem;
+    /*     --bs-body-font-size: 0.875rem; */
+    /*     --bs-primary-rgb: 0, 125, 128;
+    --bs-warning-rgb: 255, 209, 102;
+    --bs-info-rgb: 127, 41, 130;
+    --bs-success-rgb: 6, 214, 160;
+    --bs-danger-rgb: 239, 71, 111; */
+    --bs-body-font-family: "Nunito", sans-serif;
+    --bs-border-radius: 1rem;
+    --bs-link-color: var(--bs-dark) !important;
+    --bs-border-color: lightgray;
+    /* --bs-link-hover-color: #006467; */
+    --bs-border-width: 2px;
+    --bs-border-radius-sm: calc(var(--bs-border-radius)*1);
+    --bs-border-radius-lg: calc(var(--bs-border-radius)*1.2);
+    --bs-border-radius-xl: calc(var(--bs-border-radius)*2);
+    --bs-border-radius-2xl: calc(var(--bs-border-radius)*2.5);
+    --bs-modal-bg: var(--bs-white);
+
+    --scrollbar-color-track: transparent;
+    --scrollbar-color-thumb: var(--bs-light);
+    /* CARD */
+    --card-bg: var(--bs-white);
+}
+
+[data-bs-theme="dark"] {
+    --bs-body-bg: #000000;
+    --bs-body-bg-rgb: 0, 0, 0;
+    --bs-border-color: #656565;
+    --card-bg: #010107;
+}
+
+.dark .dropdown-toggle {
+    color: var(--bs-light);
+}
+
+.dark .modal-content {
+    --bs-modal-bg: var(--card-bg);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.modal {
+    --bs-modal-bg: var(--bs-white);
+}
+
+.btn {
+    font-weight: 700 !important;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: transparent;
+}
+
+.btn.btn-lg {
+
+    padding: 1rem 2.75rem;
+    padding-top: 1rem;
+    padding-right: 2.75rem;
+    padding-bottom: 1rem;
+    padding-left: 2.75rem;
+    font-size: 1rem;
+    border-radius: 50rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* .bg-light {
+    background-color: var(--bs-light) !important;
+} */
+
+/* IMPORTANT */
+/* These rules override the body bg under all containers in the app, used by bootstrap as background color for everything basically */
+/* This is to set our actual bg instead of the contrasting color for the background */
+/* Add more rules here to provide the color from a top level container */
+
+:root {
+    --ReactInputVerificationCode-itemWidth: 3.3rem !important;
+    --ReactInputVerificationCode-itemHeight: 3rem !important;
+    --ReactInputVerificationCode-itemSpacing: 1rem !important;
+}
+
+
+/* ==== */
+
+.card {
+    --bs-card-spacer-y: 16px;
+    --bs-card-spacer-x: 16px;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 2px;
+    --bs-card-border-color: var(--bs-border-color);
+    --bs-card-border-radius: 16px;
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: 15px;
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--card-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out, border-color 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: #39bdc7;
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-disabled-color: var(--bs-primary-subtle);
+    --bs-btn-disabled-border-color: var(--bs-primary-subtle);
+}
+
+.btn-warning {
+    --bs-btn-bg: #FFD166;
+    --bs-btn-border-color: #FFD166;
+    --bs-btn-hover-bg: #e6b84d;
+    --bs-btn-hover-border-color: #e6b84d;
+    --bs-btn-active-bg: #e6b84d;
+    --bs-btn-active-border-color: #e6b84d;
+    --bs-btn-disabled-bg: #FFD166;
+    --bs-btn-disabled-border-color: #FFD166;
+}
+
+.btn-info {
+    --bs-btn-bg: #7f2982;
+    --bs-btn-border-color: #7f2982;
+    --bs-btn-hover-bg: #661069;
+    --bs-btn-hover-border-color: #661069;
+    --bs-btn-active-bg: #661069;
+    --bs-btn-active-border-color: #661069;
+    --bs-btn-disabled-bg: #7f2982;
+    --bs-btn-disabled-border-color: #7f2982;
+}
+
+.btn-success {
+    --bs-btn-bg: #06D6A0 !important;
+    --bs-btn-border-color: #06D6A0 !important;
+    --bs-btn-hover-bg: #00bd87 !important;
+    --bs-btn-hover-border-color: #00bd87 !important;
+    --bs-btn-active-bg: #00bd87 !important;
+    --bs-btn-active-border-color: #00bd87 !important;
+    --bs-btn-disabled-bg: #06D6A0 !important;
+    --bs-btn-disabled-border-color: #06D6A0 !important;
+}
+
+.btn-secondary {
+    --bs-btn-color: #484a61;
+    --bs-btn-bg: #ffff;
+    --bs-btn-border-color: #484a61;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(72, 74, 97, 0.32);
+    --bs-btn-hover-border-color: rgba(72, 74, 97, 0.32);
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #484a61;
+    --bs-btn-active-bg: rgba(72, 74, 97, 0.32);
+    --bs-btn-active-border-color: rgba(72, 74, 97, 0.32);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #484a61;
+    --bs-btn-disabled-border-color: #484a61;
+}
+
+
+.btn-danger {
+    --bs-btn-bg: var(--bs-danger) !important;
+    --bs-btn-border-color: var(--bs-danger) !important;
+    --bs-btn-hover-bg: var(--bs-danger) !important;
+    --bs-btn-hover-border-color: var(--bs-danger) !important;
+    --bs-btn-active-bg: var(--bs-danger) !important;
+    --bs-btn-active-border-color: var(--bs-danger) !important;
+    --bs-btn-disabled-bg: var(--bs-danger) !important;
+    --bs-btn-disabled-border-color: var(--bs-danger) !important;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-primary) !important;
+    --bs-btn-border-color: var(--bs-primary) !important;
+    --bs-btn-hover-bg: var(--bs-primary) !important;
+    --bs-btn-hover-border-color: var(--bs-primary) !important;
+    --bs-btn-active-bg: var(--bs-primary) !important;
+    --bs-btn-active-border-color: var(--bs-primary) !important;
+    --bs-btn-disabled-color: var(--bs-primary) !important;
+    --bs-btn-disabled-border-color: var(--bs-primary) !important;
+}
+
+.btn-outline-warning {
+    --bs-btn-color: #FFD166 !important;
+    --bs-btn-border-color: #FFD166 !important;
+    --bs-btn-hover-bg: #FFD166 !important;
+    --bs-btn-hover-border-color: #FFD166 !important;
+    --bs-btn-active-bg: #FFD166 !important;
+    --bs-btn-active-border-color: #FFD166 !important;
+    --bs-btn-disabled-color: #FFD166 !important;
+    --bs-btn-disabled-border-color: #FFD166 !important;
+}
+
+.btn-outline-info {
+    --bs-btn-color: #00B4FA !important;
+    --bs-btn-border-color: #00B4FA !important;
+    --bs-btn-hover-bg: #00B4FA !important;
+    --bs-btn-hover-border-color: #00B4FA !important;
+    --bs-btn-active-bg: #00B4FA !important;
+    --bs-btn-active-border-color: #00B4FA !important;
+    --bs-btn-disabled-color: #00B4FA !important;
+    --bs-btn-disabled-border-color: #00B4FA !important;
+}
+
+.btn-outline-success {
+    --bs-btn-color: #06D6A0 !important;
+    --bs-btn-border-color: #06D6A0 !important;
+    --bs-btn-hover-bg: #06D6A0 !important;
+    --bs-btn-hover-border-color: #06D6A0 !important;
+    --bs-btn-active-bg: #06D6A0 !important;
+    --bs-btn-active-border-color: #06D6A0 !important;
+    --bs-btn-disabled-color: #06D6A0 !important;
+    --bs-btn-disabled-border-color: #06D6A0 !important;
+}
+
+.btn-outline-danger {
+    --bs-btn-color: #EF476F !important;
+    --bs-btn-border-color: #EF476F !important;
+    --bs-btn-hover-bg: #EF476F !important;
+    --bs-btn-hover-border-color: #EF476F !important;
+    --bs-btn-active-bg: #EF476F !important;
+    --bs-btn-active-border-color: #EF476F !important;
+    --bs-btn-disabled-color: #EF476F !important;
+    --bs-btn-disabled-border-color: #EF476F !important;
+}
+
+.btn-dark {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #1B1E3B;
+    --bs-btn-border-color: #1B1E3B;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(27, 30, 59, 0.32);
+    --bs-btn-hover-border-color: rgba(27, 30, 59, 0.32);
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #4d5154;
+    --bs-btn-active-border-color: rgba(27, 30, 59, 0.32);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #1B1E3B;
+    --bs-btn-disabled-border-color: #1B1E3B;
+}
+
+.btn-outline-big {
+    --bs-btn-border-width: 3.6px !important;
+}
+
+.btn-link {
+    text-decoration: none;
+}
+
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+    text-decoration: none;
+}
+
+.list-group-item {
+    --bs-list-group-bg: transparent !important;
+}
+
+
+.accordion {
+    --bs-accordion-bg: transparent !important;
+    --bs-accordion-btn-color: var(--bs-light) !important;
+    --bs-accordion-active-color: var(--bs-dark) !important;
+    --bs-accordion-active-bg: transparent !important;
+    --bs-accordion-btn-bg: transparent !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+    --bs-accordion-active-bg: none !important;
+    --bs-accordion-border-width: 0px !important;
+    --bs-accordion-inner-border-radius: 16px !important;
+    --bs-accordion-border-radius: 16px !important;
+    --bs-accordion-btn-focus-border-color: transparent !important;
+    --bs-accordion-btn-bg: transparent !important;
+    --bs-accordion-body-padding-y: 0rem !important;
+    --bs-accordion-btn-padding-y: 0rem !important;
+    --bs-accordion-btn-padding-x: 0rem !important;
+
+    /*     --bs-accordion-color: #{$accordion-color}!important;
+    --bs-accordion-bg: #{$accordion-bg}!important;
+    --bs-accordion-transition: #{$accordion-transition}!important;
+    --bs-accordion-border-color: var(--bs-body-bg)!important;
+    --bs-accordion-border-width: #{$accordion-border-width}!important;
+    --bs-accordion-border-radius: #{$accordion-border-radius}!important;
+    --bs-accordion-inner-border-radius: #{$accordion-inner-border-radius}!important;
+    --bs-accordion-btn-padding-x: #{$accordion-button-padding-x}!important;
+    --bs-accordion-btn-padding-y: #{$accordion-button-padding-y}!important;
+    --bs-accordion-btn-bg: #{$accordion-button-bg}!important;
+    --bs-accordion-btn-icon: #{escape-svg($accordion-button-icon)}!important;
+    --bs-accordion-btn-icon-width: #{$accordion-icon-width}!important;
+    --bs-accordion-btn-icon-transform: #{$accordion-icon-transform}!important;
+    --bs-accordion-btn-icon-transition: #{$accordion-icon-transition}!important;
+    --bs-accordion-btn-active-icon: #{escape-svg($accordion-button-active-icon)}!important;
+    --bs-accordion-btn-focus-border-color: #{$accordion-button-focus-border-color}!important;
+    --bs-accordion-btn-focus-box-shadow: #{$accordion-button-focus-box-shadow}!important;
+    --bs-accordion-body-padding-x: #{$accordion-body-padding-x}!important;
+    --bs-accordion-body-padding-y: #{$accordion-body-padding-y}!important;
+    --bs-accordion-active-color: #{$accordion-button-active-color}!important;
+    --bs-accordion-active-bg: #{$accordion-button-active-bg}!important;
+     */
+
+}
+
+:root {
+    --dark-bg: #1B1E3B !important;
+    --blue-light-bg: #484F93 !important;
+    --gradient-bg: linear-gradient(180deg, var(--blue-light-bg) 50%, var(--dark-bg) 100%) !important;
+
+    --h1-font-size: 40px !important;
+    --h2-font-size: 40px !important;
+    --h3-font-size: 32px !important;
+    --h4-font-size: 20px !important;
+    --display-1-font-size: 80px !important;
+
+    /*     --container-padding-x: 24px !important; */
+    --section-padding-y: 60px !important;
+
+    --header-height: 80px !important;
+    --navbar-padding-x: 24px !important;
+    --navbar-padding-y: 24px !important;
+
+    --footer-padding-y: 75px !important;
+    --portfolio-padding-y: 3rem !important;
+
+    --single-hero-padding-y: 24px !important;
+    --single-preview-padding-x: 1rem !important;
+    --single-preview-padding-y: 2rem !important;
+
+    --swiper-navigation-size: 15px !important;
+}
+
+
+/* .container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-md,
+.container-lg,
+.container-sm {
+    padding-left: var(--container-padding-x);
+    padding-right: var(--container-padding-x);
+} */
+.flickity-page-dots {
+    bottom: -35px;
+}
+
+/* dots are lines */
+.flickity-page-dots .dot {
+    height: 1rem;
+    opacity: 0.50;
+    width: 1rem;
+    background: var(--bs-primary);
+}
+
+.flickity-page-dots .dot.is-selected {
+    background: var(--bs-primary);
+    opacity: 1;
+}
+
+@media (min-width: 1200px) {
+    .container-fluid {
+        --container-padding-x: 155px !important;
+    }
+}
+
+.nav {
+    --bs-nav-link-color: var(--bs-secondary) !important;
+}
+
+/* MAIN PAGE */
+
+/* 
+    This is the css for the main page buttons
+    It is applied only when the button is inactive
+    Override here to change the bg to match the theme
+*/
+.EduQuizMainPageButtonInactive {
+    background-color: var(--card-bg) !important;
+    border-color: var(--bs-light) !important;
+}
+
+
+.modal-backdrop {
+    --bs-backdrop-zindex: 1022;
+    background-color: var(--bs-primary);
+    bottom: 0 !important;
+}
+
+.dropdown-menu {
+    background-color: var(--bs-white);
+}
+
+.offcanvas:not(.offcanvas-end) {
+    --bs-offcanvas-width: calc(100% - 1rem);
+    height: fit-content !important;
+    min-height: 32rem;
+    --bs-offcanvas-padding-x: 1rem;
+    --bs-offcanvas-padding-y: 1rem;
+    --bs-offcanvas-color: var(--bs-body-color);
+    --bs-offcanvas-bg: var(--bs-body-bg);
+    --bs-offcanvas-border-width: var(--bs-border-width);
+    --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+    --bs-offcanvas-box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+    --bs-offcanvas-title-line-height: 1.5;
+    border-radius: var(--bs-border-radius);
+    top: 4rem !important;
+
+
+}
+
+.offcanvas.show:not(.offcanvas-end) {
+    right: 50% !important;
+    left: 50% !important;
+
+    transform: translate(-50%, -0%) !important;
+}
+
+a {
+    color: var(--bs-primary);
+}
+
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-color-thumb) var(--scrollbar-color-track);
+}
+
+* {
+    scrollbar-color: #ffffffd7 var(--scrollbar-color-track);
+    scrollbar-width: thin;
+}
+
+.offcanvas-backdrop {
+    background-color: var(--bs-primary)
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 5 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .main-page-scroll-container {
+        padding-right: 24px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    .main-page-scroll-container {
+        padding-right: 32px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .main-page-scroll-container {
+        padding-right: 48px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .main-page-scroll-container {
+        padding-right: 64px;
+    }
+}
+
+/* Extra extra large devices (extra large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .main-page-scroll-container {
+        padding-right: 64px;
+    }
+}
+
+.text-primary-subtle {
+    color: var(--bs-primary-subtle);
+}
+
+/* FORM CHECK */
+.form-check-input:checked {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.form-floating>.form-control:focus~label::after,
+.form-floating>.form-control:not(:placeholder-shown)~label::after,
+.form-floating>.form-control-plaintext~label::after,
+.form-floating>.form-select~label::after {
+    background-color: transparent !important;
+}
